@@ -1,4 +1,6 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app). It uses Typescript for code safety, React's built-in context manager for global state management, and [Axios](https://github.com/axios/axios) for API integration.
+
+The router is a custom setup based on the React documentation. Most CSS styling is done inline using JS.
 
 ## Available Scripts
 
