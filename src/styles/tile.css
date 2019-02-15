@@ -1,0 +1,4 @@
+.corners:before,
+.corners:after {
+  content: "";
+}

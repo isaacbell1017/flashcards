@@ -1,0 +1,627 @@
+html {
+  position: relative;
+  height: 100%;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: #f7f7f7;
+  position: relative;
+  font-size: 14px;
+  color: #141416;
+  padding: 0px;
+  min-height: 100%;
+
+  background: rgba(255, 255, 255, 0);
+  background: -webkit-linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0));
+  background: -moz-linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0));
+  background: -ms-linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0));
+  background: -o-linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0));
+  background: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0));
+  background-color: #eff0f3;
+  background-repeat: no-repeat;
+}
+
+.page-content > .row {
+  margin-left: 0px !important;
+  margin-right: 0px !important;
+  margin-top: 90px;
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
+}
+
+/**********************************
+Responsive navbar-brand image CSS
+- Remove navbar-brand padding for firefox bug workaround
+- add 100% height and width auto ... similar to how bootstrap img-responsive class works
+***********************************/
+
+.navbar-brand {
+  padding: 0px;
+}
+
+.navbar-brand>img {
+  height: 100%;
+  padding: 15px;
+  width: auto;
+}
+
+/* line height is 20px by default so add 30px top and bottom to equal the new .navbar-brand 80px height  */
+
+.header {
+  background-color: #6b9eb5;
+}
+
+.header .navbar{
+   background-color: #6b9eb5;
+   border:0px !important;
+}
+
+.header .navbar-brand {
+  height: 80px;
+}
+
+.header .nav >li >a {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.header .navbar-toggle {
+  padding: 10px;
+  margin: 25px 15px 25px 0;
+}
+
+.header .tagline {
+  color: #eff0f3;
+	display: block;
+	position: absolute;
+  top: 28px;
+  right: 3%;
+}
+
+#components-layout-demo-top .logo {
+  width: 120px;
+  height: 31px;
+  background: rgba(255,255,255,.2);
+  margin: 16px 24px 16px 0;
+  float: left;
+}
+
+/* CSS Transform Align Navbar Brand Text ... This could also be achieved with table / table-cells */
+.navbar-alignit .navbar-header {
+	-webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  height: 50px;
+}
+.navbar-alignit .navbar-brand {
+	top: 50%;
+	display: block;
+	position: relative;
+	height: auto;
+	transform: translate(0,-50%);
+	margin-right: 15px;
+  margin-left: 15px;
+}
+
+.navbar-nav>li>.dropdown-menu {
+	z-index: 9999;
+}
+
+.header #navbar .navbar-nav .active a { background-color:#b5b5b5 !important; }
+
+.header .navbar-nav>.open>a,.header  .navbar-nav>.open>a:hover,.header .navbar-nav>.open>a:focus {
+   background-color:#a5bdc6 !important;
+}
+
+.navbar-inverse .navbar-nav>li>a {
+  color: #4e4e54;
+}
+
+.header .nav .standout {
+  background: rgba(0, 0, 0, 0.4);
+  padding: 10px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  position: relative;
+  top: 20px;
+  color: #fff;
+}
+.header .nav .standout:active {
+  background: rgba(0, 0, 0, 0.4);
+  color: #fff;
+}
+.header .nav .standout:hover {
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  text-decoration: none;
+}
+
+
+.header .navbar-toggle {
+   background-color: #54afe2 !important;
+   border:1px solid #a5bdc6 !important;
+}
+
+.header .navbar-toggle:hover, .header .navbar-toggle:focus {
+   background-color: #a5bdc6 !important;
+   border:1px solid #a5bdc6 !important;
+}
+
+/* Footer */
+
+footer{
+   position: absolute;
+   bottom: 0;
+   width: 100%;
+   /* Set the fixed height of the footer here */
+   height: 60px;
+   background-color:#6b9eb5;
+   box-shadow:inset 0px 0px 3px #111;
+   color:#fff;
+   font-size:14px;
+   line-height:25px;
+}
+
+footer a{
+   color:#eee;
+   text-decoration:none;
+   border-bottom:1px dotted #888;
+}
+
+footer a:hover{
+   color:#aaa;
+   text-decoration:none;
+   border:0px;
+}
+
+footer hr{
+	margin-top: 10px;
+	margin-bottom: 10px;
+	border-top: #000 1px solid;
+	border-bottom: #212121 1px solid;
+}
+
+footer .copy{
+   font-size:13px;
+   margin:15px 0px;
+}
+
+/* Panels & Wizards */
+
+.panel-heading {
+  background-color: #141416 !important;
+}
+
+.panel-heading .panel-title {
+  color: #fff;
+  font-size: 18px;
+  padding: 2px;
+}
+
+.tab-pane {
+  padding: 10px; margin: 10px;
+}
+
+.tab-pane .text-primary {
+  padding-bottom: 25px;
+  font-size: 16px;
+}
+
+.tab-pane .text-warning {
+  padding-bottom: 25px;
+  font-size: 16px;
+}
+
+span.note {
+  margin-bottom: 10px;
+}
+
+.nav-pills li {
+  padding: 5px;
+  font-size: 16px;
+}
+
+/* Form Controls */
+
+.form-group {
+  padding: 5px;
+}
+
+label.control-label {
+  font-size: 14px;
+  padding-bottom: 10px;
+}
+
+label.checkbox {
+  padding: 10px;
+  margin: 10px;
+  font-size: 14px;
+  vertical-align: middle;
+  max-height: 14px;
+}
+
+label.checkbox-inline {
+  padding: 10px;
+  margin: 10px;
+  font-size: 14px;
+  vertical-align: middle;
+  max-height: 14px;
+}
+
+div.action {
+  text-align: center;
+  top: 10px;
+  padding: 15px 0px;
+}
+
+.range-output {
+  display:block;
+  font-size:20px;
+  font-weight:bold;
+  text-align:center;
+  margin:10px 0
+}
+
+a.warning {
+  color: red;
+}
+
+.content-wrapper, .row-login {
+  margin-top: 50px;
+}
+
+/* Login Page */
+
+.login-wrapper {
+  left: 0;
+  right: 0;
+  text-align: center;
+  margin-top: 30px;
+}
+
+
+.login-wrapper .box {
+  margin: 0 auto;
+  padding: 10px 0 10px;
+  float: none;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.4) 0 1px 3px, rgba(0, 0, 0, 0.35) 0 0 1px;
+  -moz-box-shadow: rgba(0, 0, 0, 0.4) 0 1px 3px, rgba(0, 0, 0, 0.35) 0 0 1px;
+  -ms-box-shadow: rgba(0, 0, 0, 0.4) 0 1px 3px, rgba(0, 0, 0, 0.35) 0 0 1px;
+  -o-box-shadow: rgba(0, 0, 0, 0.4) 0 1px 3px, rgba(0, 0, 0, 0.35) 0 0 1px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0 1px 3px, rgba(0, 0, 0, 0.35) 0 0 1px;
+  background: #fff;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+  border-radius: 6px;
+}
+.login-wrapper .box .content-wrap {
+  width: 82%;
+  margin: 0 auto;
+}
+.login-wrapper .box h6 {
+  margin-bottom: 20px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.login-wrapper .box .action {
+  position: relative;
+  top: 30px;
+  padding: 15px 0px;
+}
+.login-wrapper .box .signup {
+  text-transform: uppercase;
+  font-size: 13px;
+  padding: 7px 25px;
+  border-radius: 5px;
+}
+.login-wrapper .already {
+  margin: 0 auto;
+  float: none;
+  text-align: center;
+  font-size: 13px;
+  margin-top: 30px;
+}
+.login-wrapper .already p {
+  display: inline-block;
+  color: #222;
+}
+.login-wrapper .already a {
+  color: #222;
+  margin-left: 7px;
+  border-bottom: 1px solid;
+}
+.login-wrapper .already a:hover {
+  text-decoration: none;
+  color: #000;
+  border-bottom-color: #000;
+}
+
+.login-wrapper .box .social{
+  margin: 0 auto;
+  width: 80%;
+}
+.login-wrapper .box .division{
+  display: inline-block;
+    margin: 10px 0 10px;
+    position: relative;
+    text-align: center;
+    width: 100%;
+}
+.login-wrapper .box .division hr{
+  border-color: #E2E2E4;
+    border-width: 1px;
+    margin: 0;
+    position: absolute;
+    width: 40%;
+}
+.login-wrapper .box .division hr.left{
+  top: 13px;
+}
+.login-wrapper .box .division hr.right{
+  bottom: 6px;
+    right: 0;
+}
+.login-wrapper .box .division span{
+  color: #666666;
+  font-size: 18px;
+}
+
+.extra {
+  position: relative;
+  min-height: 30px;
+}
+
+.forgotten-password {
+  text-align:right;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.btn {
+  font-size: 16px;
+  padding: 15px;
+}
+
+a.btn-social,
+.btn-social {
+  background: #28A5A8;
+  border: none;
+  color: #fff;
+  padding: 10px 15px;
+  font-weight: normal;
+  text-align: left;
+}
+a.btn-social:hover,
+.btn-social:hover,
+a.btn-social:active,
+.btn-social:active,
+a.btn-social:focus,
+.btn-social:focus {
+  background: #239193;
+  border: none;
+  color: #fff;
+  outline: none;
+}
+a.btn-social .fa,
+.btn-social .fa {
+  padding-right: 10px;
+  border-right: 1px solid rgba(0, 0, 0, 0.2);
+  display: inline-block;
+  text-align: left;
+  font-size: 16px;
+  padding-top: 2px;
+}
+a.btn-social .btn-text,
+.btn-social .btn-text {
+  padding-left: 10px;
+  display: inline-block;
+  text-align: center;
+}
+a.btn-google,
+.btn-google {
+  background: #d73d32;
+}
+a.btn-google:hover,
+.btn-google:hover,
+a.btn-google:active,
+.btn-google:active,
+a.btn-google:focus,
+.btn-google:focus {
+  background: #c83227;
+}
+a.btn-facebook,
+.btn-facebook {
+  background: #3b5998;
+}
+a.btn-facebook:hover,
+.btn-facebook:hover,
+a.btn-facebook:active,
+.btn-facebook:active,
+a.btn-facebook:focus,
+.btn-facebook:focus {
+  background: #344e86;
+}
+a.btn-microsoft,
+.btn-microsoft {
+  background: #333333;
+}
+a.btn-microsoft:hover,
+.btn-microsoft:hover,
+a.btn-microsoft:active,
+.btn-microsoft:active,
+a.btn-microsoft:focus,
+.btn-microsoft:focus {
+  background: #262626;
+}
+a.btn-twitter,
+.btn-twitter {
+  background: #1DA1F2;
+}
+a.btn-twitter:hover,
+.btn-twitter:hover,
+a.btn-twitter:active,
+.btn-twitter:active,
+a.btn-twitter:focus,
+.btn-twitter:focus {
+  background: #0d95e8;
+}
+a.btn-donor,
+.btn-donor {
+  background: #b5b5b5;
+}
+a.btn-donor:hover,
+.btn-donor:hover,
+a.btn-donor:active,
+.btn-donor:active,
+a.btn-donor:focus,
+.btn-donor:focus {
+  background: #a5bdc6;
+}
+a.btn-mission,
+.btn-mission {
+  background: #4e4e54;
+}
+a.btn-mission:hover,
+.btn-mission:hover,
+a.btn-mission:active,
+.btn-mission:active,
+a.btn-mission:focus,
+.btn-mission:focus {
+  background: #819298;
+}
+
+.content-box, .content-box-large {
+  margin-bottom:30px;
+  background:#fff;
+  border-radius:10px;
+  padding:10px;
+  border-left:1px solid #eee;
+  border-top:1px solid #eee;
+  border-right:2px solid #eee;
+  border-bottom:2px solid #eee;
+}
+
+.content-box-large {
+ padding: 20px;
+}
+
+.box-with-header {
+ border-top: none;
+ border-top-left-radius:0px;
+ border-top-right-radius:0px;
+}
+
+.content-box-header {
+  min-height: 40px;
+  font-size: 16px;
+  /* background:#f5f5f5; */
+  background: #a5bdc6;
+  border-top-left-radius:5px;
+  border-top-right-radius:5px;
+  padding:10px;
+  border-left:1px solid #eee;
+  border-top:1px solid #eee;
+  border-right:2px solid #eee;
+}
+
+.content-box-header .panel-title {
+  color: white;
+}
+
+.content-box-header:after {
+ clear:both;
+}
+
+.fa-check-green {
+  color: green;
+}
+
+/* Responsive CSS */
+
+/* Mobile phones */
+@media (max-width: 480px){
+
+}
+
+/* Tablets */
+@media (max-width: 767px){
+   .container{
+      width:100%;
+   }
+   .header{
+      height:auto;
+      padding:15px 0px;
+   }
+   .header .logo{
+      text-align:center;
+      padding-bottom:10px;
+   }
+   .header .navbar .nav > li > a:hover{
+      background:#a5bdc6;
+      border-radius:5px;
+   }
+   .navbar-toggle {
+      margin-right:0px !important;
+   }
+  .navbar-inverse .navbar-nav .open .dropdown-menu>li>a {
+    color: #4e4e54;
+  }
+}
+
+/* Desktop */
+
+@media (max-width: 991px){
+   .header{
+      height:auto;
+      padding:15px 0px;
+   }
+   .header .logo{
+      text-align:center;
+      padding-bottom:10px;
+   }
+   .header .form{
+      margin:10px auto;
+   }
+   .sidebar, content-box{
+      margin-bottom:30px;
+      width:100%;
+      float:none;
+      position:relative;
+   }
+   .mainy{
+      margin-left: 0px;
+   }
+   .sidebar-dropdown{
+      display:block;
+      text-align:center;
+      margin:0 auto;
+      margin-bottom:10px;
+      border-bottom:1px dashed #eee;
+      padding-bottom:10px;
+   }
+   .sidebar-dropdown a, .sidebar-dropdown a:hover{
+      color:#fff;
+      background:#16cbe6;
+      display:block;
+      padding:6px 12px;
+      border-bottom:0px;
+      box-shadow:0px 0px 1px #0fa6bc;
+      border-radius:10px;
+   }
+}
+
+.iti-flag {background-image: url("/lib/intl-tel-input/build/img/flags.png");}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .iti-flag {background-image: url("/lib/intl-tel-input/build/img/flags@2x.png");}
+}
