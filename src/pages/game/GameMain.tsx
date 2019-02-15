@@ -168,16 +168,25 @@ class GameMain extends Component<Props, State> {
   }
 
   renderQuestions = (questions: any) => {
-    return questions.map((q: any) => this.renderQuestion(q, questions.indexOf(q)));
+    let nextQuestion = questions.filter((q: any) => {
+      return !q.response || q.response === null;
+    })[0];
+    return questions.map((q: any) => this.renderQuestion(
+      q,
+      questions.indexOf(q),
+      q === nextQuestion
+    ));
   }
 
-  renderQuestion = (question: any, key: number) => {
+  renderQuestion = (question: any, key: number, isNextQuestion: boolean) => {
     const answers = this.shuffleAnswers(question);
+    console.log(question);
+    let show = question.response !== null || isNextQuestion;
 
     return (
       <Col span={6} key={key}>
         <Card
-          style={styles.card}
+          style={show ? styles.card : styles.hiddenCard}
           cover={<img alt="example" src="https://gw.alipayobjects.com/zos/rmsportal/JiqGstEfoWAOHiTxclqi.png" />}
           title={question.category}
         >
@@ -236,6 +245,9 @@ const styles = {
     marginBottom: '4%',
     background: 'white',
     padding: '2%'
+  },
+  hiddenCard: {
+    opacity: 0
   },
   icon: {
     height: 72,
